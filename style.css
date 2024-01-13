@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgb(11, 20, 185) 0%, rgba(245, 240, 242, 1) 100%, rgb(103, 167, 179) 100%);
+    font-family: monospace, sans-serif;
+    color: #db7125;
+}
+
+.container {
+    background: rgba(15, 208, 247, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 55%;
+    max-width: 800px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 32px;
+}
+
+.temp-container {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 60%;
+    font-family: monospace;
+    padding: 5px;
+    outline: none;
+    background: rgba(0, 212, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: darkblue;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: rgb(219, 234, 10);
+}
+
+.button{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.button button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button button:hover{
+    background: #000;
+    color: white;
+}
+
+/* Responsive CSS */
+@media (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+    input {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 60%;
+    }
+
+    input {
+        width: 40%;
+    }
+}
